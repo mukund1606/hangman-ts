@@ -53,7 +53,6 @@ function Keyboard({
       {KEYS.map((key) => {
         const isActive = activeLetters.includes(key);
         const isInactive = inactiveLetters.includes(key);
-        console.log(key, isActive, isInactive);
         return (
           <button
             onClick={() => addGuessedLetter(key)}

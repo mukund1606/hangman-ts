@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       const key = e.key.toLowerCase();
-      if (!key.match(/[a-z]/)) return;
+      if (!key.match(/[a-z]/) || key.length != 1) return;
       e.preventDefault();
       addGuessedLetter(key);
     };
